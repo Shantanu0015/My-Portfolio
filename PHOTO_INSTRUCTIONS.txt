@@ -1,0 +1,19 @@
+To add your photo to the portfolio:
+
+1. Save your photo as "my-photo.jpg" in this same folder (My Portfolio)
+2. Make sure the image is:
+   - Square or circular crop (recommended: 400x400 pixels or larger)
+   - Professional headshot or portrait
+   - Good quality and well-lit
+   - File size under 2MB for fast loading
+
+Supported formats: .jpg, .jpeg, .png, .webp
+
+If you want to use a different filename, update the src in index.html:
+<img src="your-photo-filename.jpg" alt="Shantanu Sarkar">
+
+For best results:
+- Use a recent, professional photo
+- Ensure good lighting and clear background
+- Crop to show face prominently
+- Save in JPG format for smaller file size
