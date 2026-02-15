@@ -32,7 +32,7 @@ This portfolio is more than just a personal website - it's a carefully crafted d
 The portfolio serves as both a personal showcase and a testament to modern web development capabilities, featuring smooth animations, engaging interactions, and a cohesive visual identity throughout.
 
 ## 🚀 Live Demo
-🌐 [View Live Portfolio](https://my-portfolio-shantanu.vercel.app/)
+🌐 [View Live Portfolio](https://my-portfolio-two-alpha-16.vercel.app)
 
 Experience the portfolio in its full glory with all animations and interactions. The live version is deployed on Vercel with global CDN distribution for optimal performance worldwide.
 
