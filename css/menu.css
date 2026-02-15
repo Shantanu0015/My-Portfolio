@@ -60,7 +60,8 @@ nav {
     width: 100vw;
     height: 100svh;
     background-color: var(--bg2);
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
     pointer-events: none;
     opacity: 0;
     z-index: 10;
@@ -170,23 +171,43 @@ nav {
     .nav-overlay .nav-items .nav-item p {
       font-size: 1.5rem;
     }
-  
+
+    .nav-overlay {
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    .nav-overlay .nav-items {
+      top: auto;
+      transform: none;
+      padding: 6em 2em 2em 2em;
+      width: 100%;
+      gap: 0.5em;
+    }
+
     .nav-overlay .nav-footer {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      position: relative;
+      padding: 2em;
+      width: 100%;
     }
-  
+
     .nav-overlay .nav-footer-item:nth-child(1) .nav-footer-item-header {
       justify-content: center;
     }
-  
+
     .nav-overlay .nav-footer-item:nth-child(2) {
       display: none;
     }
-  
+
     .nav-overlay .nav-footer-item:nth-child(3) .nav-footer-item-header {
       justify-content: center;
     }
+
+    .nav-overlay .nav-footer .nav-footer-item p {
+      font-size: 0.65rem;
+      word-break: break-word;
+    }
   }
-  
