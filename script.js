@@ -31,6 +31,24 @@ if (loaderWrapper && loaderTextElement) {
                 // Re-enable scrolling
                 document.body.style.overflow = 'auto';
                 document.body.style.overflowX = 'hidden';
+                
+                // Play the tune
+                const bgMusic = document.getElementById('bg-music');
+                if (bgMusic) {
+                    bgMusic.volume = 0.4; // Slightly lower volume
+                    bgMusic.play().catch(error => {
+                        console.log("Autoplay blocked by browser. User must interact first.");
+                        // Optional: Show a play button if blocked, but usually just clicking anywhere later can trigger it
+                    });
+                }
+                
+                // Play music if user clicks anywhere (to bypass autoplay restrictions)
+                document.body.addEventListener('click', () => {
+                    if (bgMusic && bgMusic.paused) {
+                        bgMusic.play();
+                    }
+                }, { once: true });
+                
             }, 800);
         }
     }
