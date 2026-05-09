@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Shantanu Sarkar – Web Developer and BCA Student.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="Shantanu.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="Shantanu.jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact | Shantanu Sarkar</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="Shantanu.jpg" alt="Shantanu" class="logo-img">Shantanu Sarkar</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <section class="page-section">
+        <div class="section-title">
+            <h2>Get In <span>Touch</span></h2>
+            <p>Have a project in mind? Let's build something great together.</p>
+        </div>
+
+        <div class="contact-wrapper">
+
+            <!-- Info Panel -->
+            <div class="contact-info">
+                <h3>Let's <span>Talk</span></h3>
+                <p>I'm open to freelance opportunities, collaborations, and interesting projects. Feel free to reach out through any channel below.</p>
+
+                <div class="contact-detail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span><a href="mailto:shantanu030204@gmail.com" style="color:#ccc; text-decoration:none;">shantanu030204@gmail.com</a></span>
+                </div>
+
+                <div class="contact-detail">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span><a href="https://www.linkedin.com/in/shantanu-sarkar-b94312373/" target="_blank" rel="noopener noreferrer" style="color:#ccc; text-decoration:none;">linkedin.com/in/shantanu-sarkar</a></span>
+                </div>
+
+                <div class="contact-detail">
+                    <i class="fa-brands fa-github"></i>
+                    <span><a href="https://github.com/Shantanu0015" target="_blank" rel="noopener noreferrer" style="color:#ccc; text-decoration:none;">github.com/Shantanu0015</a></span>
+                </div>
+
+                <div class="contact-detail">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <span><a href="https://x.com/Shantanu1154159" target="_blank" rel="noopener noreferrer" style="color:#ccc; text-decoration:none;">x.com/Shantanu1154159</a></span>
+                </div>
+
+                <div class="contact-detail">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span><a href="https://www.instagram.com/ghosh_official_06/" target="_blank" rel="noopener noreferrer" style="color:#ccc; text-decoration:none;">instagram.com/ghosh_official_06</a></span>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form" action="https://formsubmit.co/shantanu030204@gmail.com" method="POST">
+                
+                <!-- FormSubmit Settings -->
+                <input type="hidden" name="_subject" value="New message from portfolio!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none"> <!-- Anti-spam -->
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="_subject" placeholder="Project Inquiry" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <button type="submit" class="btn-send">
+                    <i class="fa-solid fa-paper-plane"></i> &nbsp; Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

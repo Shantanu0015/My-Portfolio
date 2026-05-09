@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AES File Encryption Tool – Secure file encryption by Shantanu Sarkar">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="Shantanu.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="Shantanu.jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>AES Encryption Tool | Shantanu Sarkar</title>
+</head>
+<body>
+<header>
+    <a href="index.html" class="logo"><img src="Shantanu.jpg" alt="Shantanu" class="logo-img">Shantanu Sarkar</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html" class="active">Experience</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="page-section">
+    <div class="breadcrumb"><a href="experience.html"><i class="fa-solid fa-arrow-left"></i> Back to Projects</a></div>
+
+    <div class="sd-hero">
+        <div class="sd-hero-icon"><i class="fa-solid fa-lock"></i></div>
+        <h1>AES File <span>Encryption Tool</span></h1>
+        <p>A military-grade file encryption and decryption utility using AES-256-GCM with PBKDF2 key derivation — available as both a desktop GUI and a local web-based application.</p>
+    </div>
+
+    <div class="sd-section">
+        <h2 class="sd-heading">Project <span>Overview</span></h2>
+        <div class="sd-offer-grid">
+            <div class="sd-offer-card">
+                <i class="fa-solid fa-lock"></i>
+                <h3>AES-256-GCM Encryption</h3>
+                <p>Implements the gold standard of symmetric encryption — AES-256 in GCM mode, providing both confidentiality and data integrity verification.</p>
+            </div>
+            <div class="sd-offer-card">
+                <i class="fa-solid fa-key"></i>
+                <h3>PBKDF2 Key Derivation</h3>
+                <p>Passwords are never used directly — PBKDF2 with a random salt derives the encryption key, making brute-force attacks computationally infeasible.</p>
+            </div>
+            <div class="sd-offer-card">
+                <i class="fa-solid fa-desktop"></i>
+                <h3>Desktop GUI Version</h3>
+                <p>A standalone desktop application with a clean graphical interface — no command line needed. Drag, drop, encrypt, done.</p>
+            </div>
+            <div class="sd-offer-card">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Browser-Based Version</h3>
+                <p>A local Flask server version that runs in the browser — same security, friendlier interface for users comfortable with web apps.</p>
+            </div>
+            <div class="sd-offer-card">
+                <i class="fa-solid fa-file-zipper"></i>
+                <h3>Any File Type</h3>
+                <p>Encrypts and decrypts any file type — documents, images, archives, code files — with no size limitation on the desktop version.</p>
+            </div>
+            <div class="sd-offer-card">
+                <i class="fa-solid fa-circle-check"></i>
+                <h3>Integrity Verification</h3>
+                <p>GCM authentication tags verify file integrity on decryption — if the file was tampered with, decryption fails safely.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sd-section">
+        <h2 class="sd-heading">How It <span>Works</span></h2>
+        <div class="sd-process">
+            <div class="sd-step">
+                <div class="sd-step-num">01</div>
+                <div class="sd-step-body">
+                    <h3>User Selects a File</h3>
+                    <p>The user picks any file they want to protect using the file picker or drag-and-drop interface.</p>
+                </div>
+            </div>
+            <div class="sd-step">
+                <div class="sd-step-num">02</div>
+                <div class="sd-step-body">
+                    <h3>Password Entry</h3>
+                    <p>User enters a password. PBKDF2 derives a 256-bit encryption key from the password using a random salt.</p>
+                </div>
+            </div>
+            <div class="sd-step">
+                <div class="sd-step-num">03</div>
+                <div class="sd-step-body">
+                    <h3>Encryption</h3>
+                    <p>AES-256-GCM encrypts the file data using the derived key and a random nonce. An authentication tag is generated.</p>
+                </div>
+            </div>
+            <div class="sd-step">
+                <div class="sd-step-num">04</div>
+                <div class="sd-step-body">
+                    <h3>Encrypted File Output</h3>
+                    <p>The encrypted file (containing salt + nonce + tag + ciphertext) is saved. The original is untouched.</p>
+                </div>
+            </div>
+            <div class="sd-step">
+                <div class="sd-step-num">05</div>
+                <div class="sd-step-body">
+                    <h3>Decryption (Reverse)</h3>
+                    <p>User provides the correct password. Key is re-derived, integrity is verified, and the original file is restored.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sd-section">
+        <h2 class="sd-heading">Tools & <span>Technologies</span></h2>
+        <div class="sd-tools">
+            <span class="sd-tool"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="sd-tool"><i class="fa-solid fa-lock"></i> AES-256-GCM</span>
+            <span class="sd-tool"><i class="fa-solid fa-key"></i> PBKDF2</span>
+            <span class="sd-tool"><i class="fa-solid fa-flask"></i> Flask</span>
+            <span class="sd-tool"><i class="fa-brands fa-html5"></i> HTML5 / CSS3</span>
+            <span class="sd-tool"><i class="fa-solid fa-shield-virus"></i> cryptography lib</span>
+            <span class="sd-tool"><i class="fa-brands fa-github"></i> GitHub</span>
+        </div>
+    </div>
+
+    <div class="sd-cta">
+        <h2>Need a <span>secure solution</span>?</h2>
+        <p>I can implement encryption and security features in your application. Let's build something secure together.</p>
+        <a href="contact.html" class="btn">Get In Touch &nbsp;<i class="fa-solid fa-paper-plane"></i></a>
+    </div>
+</section>
+</body>
+</html>
